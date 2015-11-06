@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="SearchController">
+  <head>
+    <title>Sass FM</title>
+    <!-- <link rel="stylesheet" href="css/animate.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+		<script src="js/angular.min.js"></script>
+		<script src="js/app.js"></script>
+  </head>
+	<body>
+		<noscript>
+			<div class="nojs">Javascript is either disabled or not supported in your browser. Please enable it or use a Javascript enabled browser.</div>
+		</noscript>
+
+<div class="input-group search-bar">
+	<input type="text" ng-model="search" ng-change="change()" onclick="select()" class="form-control" placeholder="Enter search term here" autofocus>
+</div>
+<div id="main-info" ng-include="partials/main-info.html">
+</div>
+<div id="main-info" ng-include="partials/related-results">
+</div>
+</body>

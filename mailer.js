@@ -88,7 +88,7 @@ function sendMail(JSON) {
            attachments: [
              { 
               filename: 'output.pdf',
-              path: '/output.pdf'    
+              path: './output.pdf'    
              }
            ],
          }

@@ -32,7 +32,7 @@ function generatePDF(JSON) {
   } else {
     //create doc and doc variables
    var doc = new PDFDocument();
-   var writeStream = fs.createWriteStream('mailer/output.pdf');
+   var writeStream = fs.createWriteStream('output.pdf');
    doc.pipe(writeStream);
    var lineItems = JSON.line_items;
    var address = JSON.shipping_address;
@@ -88,7 +88,7 @@ function sendMail(JSON) {
            attachments: [
              { 
               filename: 'output.pdf',
-              path: 'mailer/output.pdf'    
+              path: '/output.pdf'    
              }
            ],
          }

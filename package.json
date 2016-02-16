@@ -3,7 +3,7 @@
   "name": "test-theme",
   "version": "1.0.0",
   "description": "a mailer app",
-  "main": "index.js",
+  "main": "mailer.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

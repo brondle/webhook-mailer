@@ -18,7 +18,8 @@ app.post('/', function(req, res) {
 
 });
 
-app.listen(3030, function() {
+var port = process.env.PORT || 3030;
+app.listen(port, function() {
  console.log('example app listening on port 3030');
 });
 

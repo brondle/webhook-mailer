@@ -97,7 +97,7 @@ function generatePDF(JSON) {
 
    doc.save();
    writeStream.on('finish', function() {
-       // sendMail(JSON);
+       sendMail(JSON);
     });
   }
    doc.end();

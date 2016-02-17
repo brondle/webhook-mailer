@@ -120,7 +120,7 @@ function sendMail(JSON) {
        var transporter = nodemailer.createTransport(mg(auth));
          var mailOptions = {
            from: 'brent@the-mealplan.com',
-           to: 'brentlbailey@gmail.com',
+           to: 'brentlbailey@gmail.com, order@the-mealplan.com, pasang.thinay@the-mealplan.com',
            subject: JSON.order_number,
            // text: ,
            html: '<b>Order #' + + JSON.order_number +'</b>',
